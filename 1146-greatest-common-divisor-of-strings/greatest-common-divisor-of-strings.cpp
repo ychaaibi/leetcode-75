@@ -10,7 +10,7 @@ public:
         
         for (size_t i = 0; i<str2.length(); i += s.length())
             if (str2.compare(i, gcd, s))
-                return ("");
+                return ("") ;
 
         return (s);
     }
