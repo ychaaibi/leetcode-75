@@ -1,2 +1,2 @@
-# leetcode 75 interviews
+# LeetCode 75 interviews
 Leetcode - Ace Coding Interview with 75 Qs 🧩🧠.
