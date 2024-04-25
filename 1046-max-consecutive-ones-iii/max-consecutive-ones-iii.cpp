@@ -27,7 +27,6 @@ public:
         }
         
         ans = max(ans, p2 - p1);
-        
         return ( ans );
     }
 };
