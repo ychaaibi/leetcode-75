@@ -1,17 +1,24 @@
 class Solution {
 public:
     string gcdOfStrings(string str1, string str2) {
-        size_t  gcd = __gcd(str1.length(), str2.length());
-        string  s = str1.substr(0, gcd);
-
-        for (size_t i = 0; i<str1.length(); i += s.length())
-            if (str1.compare(i, gcd, s) != 0)
-                return ("");
+        int g = __gcd( str1.length(), str2.length() );
         
-        for (size_t i = 0; i<str2.length(); i += s.length())
-            if (str2.compare(i, gcd, s))
-                return ("") ;
+        string  ans = str1.substr(0, g);
+        
+        cout << ans << endl;
+        string  s1, s2;
+        
+        s1.reserve( s1.length() );
+        s2.reserve( s2.length() );
 
-        return (s);
+        for ( int i=0; i<str1.length() / g; i++ )
+            s1 += ans;
+        
+        for ( int i=0; i<str2.length() / g; i++ )
+            s2 += ans;
+        
+        if ( s1 == str1 and s2 == str2 )
+            return ( ans );
+        return ( "" );
     }
 };
