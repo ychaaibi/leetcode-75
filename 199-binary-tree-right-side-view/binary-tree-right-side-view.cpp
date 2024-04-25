@@ -18,7 +18,6 @@ public:
             return ( ans );
 
         queue<TreeNode*>  q;
-        
         q.push( root );
 
         while ( !q.empty() )
