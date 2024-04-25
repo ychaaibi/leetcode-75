@@ -3,6 +3,7 @@ public:
     int longestOnes(vector<int>& nums, int k) {
         int p1 = 0, p2 = 0, ans = 0;
         
+        
         while ( p2 < nums.size() )
         {
             if ( nums[p2] )
