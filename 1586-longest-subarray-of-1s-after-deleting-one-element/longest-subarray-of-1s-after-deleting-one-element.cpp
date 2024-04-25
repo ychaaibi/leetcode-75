@@ -14,8 +14,7 @@ public:
                 if ( c1 )
                     ans = max(c1 + c2, ans);
                 
-                c1 = c2;
-                c2 = 0;
+                c1 = c2, c2 = 0;
             }
         }
 
