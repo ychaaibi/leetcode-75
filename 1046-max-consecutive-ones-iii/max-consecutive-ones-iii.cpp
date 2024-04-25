@@ -12,11 +12,7 @@ public:
             }
             
             if ( k > 0 )
-            {
-                p2++;
-                ans = max(p2 - p1, ans);
-                k--;
-            }
+                ans = max(++p2 - p1, ans), k--;
             else
             {
                 while ( p1 < nums.size() and nums[p1] )
@@ -26,7 +22,6 @@ public:
             }
         }
         
-        ans = max(ans, p2 - p1);
         return ( ans );
     }
 };
