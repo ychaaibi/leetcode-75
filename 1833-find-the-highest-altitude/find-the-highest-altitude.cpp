@@ -7,6 +7,7 @@ public:
         for ( int i=0; i<gain.size(); i++ )
             point += gain[i], heighest = max(heighest, point);
         
+        
         return ( heighest );
     }
 };
