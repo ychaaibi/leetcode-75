@@ -32,7 +32,6 @@ public:
                     st.pop();
                 }
                 
-                
                 for ( int k=0; k<num; k++ )
                     for ( int j=0; j<curr.length(); j++ )
                         st.push( curr[j] );
