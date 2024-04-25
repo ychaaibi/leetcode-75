@@ -1,11 +1,10 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
-        map<int,int>  mp;
+        unordered_map<int,int>  mp;
         
         for ( int i=0; i<nums.size(); i++ )
             mp[nums[i]]++;
-        
         
         int         ans = 0;
         
