@@ -23,7 +23,6 @@ public:
 
                 q.pop();
 
-                cout << curr.first << " " << curr.second << endl;
                 if ( steps and 
                     (  curr.first + 1 == maze.size()
                     or curr.second + 1 == maze[0].size() 
