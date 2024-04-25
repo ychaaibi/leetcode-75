@@ -17,6 +17,7 @@ public:
             {
                 while ( p1 < nums.size() and nums[p1] )
                     p1++;
+                
                 p1++, p2++, p2 = max(p2, p1);
             }
         }
