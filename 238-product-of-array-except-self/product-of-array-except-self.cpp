@@ -13,7 +13,6 @@ public:
         for ( int i=0; i<nums.size(); i++ )
             ans[i] = mult * ( ( i + 1 == nums.size() ) ? 1 : ans[i + 1] ), mult *= nums[i];
              
-        
         return (ans);
     }
 };
