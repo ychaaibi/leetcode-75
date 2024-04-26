@@ -3,6 +3,8 @@ public:
     stack<pair<int,int>>  val;
 
     StockSpanner() {
+
+        
     }
     
     int next(int price) {
