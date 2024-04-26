@@ -18,6 +18,7 @@ public:
             }
         }
 
+
         int ans = INT_MAX;
         
         for ( int j=0; j<grid[0].size(); j++ )
